@@ -1,0 +1,946 @@
+#filterize
+	section.gallery
+		// Gallery navigation
+		input#all-categories-filter.selector-all(name='filter-buttons', type='radio', checked='checked')
+		label.label-all(for='all-categories-filter') All
+		input#category-1-filter.selector-category-1(name='filter-buttons', type='radio')
+		label.label-category-1(for='category-1-filter') Category 1
+		input#category-2-filter.selector-category-2(name='filter-buttons', type='radio')
+		label.label-category-2(for='category-2-filter') Category 2
+		input#category-3-filter.selector-category-3(name='filter-buttons', type='radio')
+		label.label-category-3(for='category-3-filter') Category 3
+		input#category-4-filter.selector-category-4(name='filter-buttons', type='radio')
+		label.label-category-4(for='category-4-filter') Category 4
+		// / Gallery navigation
+		.clrfx-1
+		ul.gallery-items
+			// Image 1
+			li.category-1.category-4
+				// Small image
+				img.fade-in.one(src="http://loremflickr.com/800/800", alt='image alt')
+				// Image overlay content
+				.overlay
+					// Category icon
+					.category
+						span.icon 
+					// Image overlay description
+					h3 Some awesome project
+					p
+						| A quick caption for the project, which can contain short description with additional stylings to match your design.
+					.divider
+					// Image link icons
+					.image-links
+						a.icon.tooltip-1.link-1(href='#image-1')
+							| 
+							span More info
+						a.icon.tooltip-1.link-2(href='#')
+							| 
+							span Open project
+						a.icon.tooltip-1.link-3(href='#')
+							| 
+							span Category
+						a.icon.tooltip-1.link-4(href='#')
+							| 
+							span Quick info
+						a.icon.tooltip-1.link-5(href='#')
+							| 
+							span Get a quote
+				// Lighbox popup
+				#image-1.lightbox
+					// Lightbox image
+					.image-wrap
+						a.close-overlay(href='#close')
+						img(src="http://loremflickr.com/800/800", alt='image alt')
+					// Lightbox content
+					.lightbox-caption
+						// Category icon
+						.category-2
+							span.icon 
+						// Lightbox image description
+						span.title Project title
+						.divider-2
+						p
+							| Additional caption for quick project description. Lacus augue. Nec sit! Habitasse? Dapibus lorem nascetur penatibus mattis! Ultricies! Et porttitor dolor ultricies ac nisi a. Facilisis tristique. Elementum cum scelerisque. In, in risus magna placerat elementum penatibus montes odio duis dapibus a!
+						#list
+							.list-1 Lorem ipsum
+							.list-2 Duis dapibus
+							.list-3 Penatibus montes
+							.list-4 In risus magna
+							.list-5 Lacus augue
+						.read-more
+							a.more(href='#')
+								| Project overview 
+								span.icon 
+						// Share icons
+						.share-icons
+							a.fb-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Share it
+							a.tw-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Tweet it
+							a.gp-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Give +1
+							a.li-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Post it
+						// Lightbox navigation
+						.lightbox-navigation
+							a.previous.icon(href='#image-12') 
+							a.next.icon(href='#image-2') 
+							a.close.icon(href='#close') 
+			// / Image 1
+			// Image 2
+			li.category-2
+				// Small image
+				img.fade-in.two(src='img/big/2.jpg', alt='image alt')
+				// Image overlay content
+				.overlay
+					// Category icon
+					.category
+						span.icon 
+					// Image overlay description
+					h3 Some awesome project
+					p
+						| A quick caption for the project, which can contain short description with additional stylings to match your design.
+					.divider
+					// Image link icons
+					.image-links
+						a.icon.tooltip-1.link-1(href='#image-2')
+							| 
+							span View image
+						a.icon.tooltip-1.link-2(href='#')
+							| 
+							span Open project
+						a.icon.tooltip-1.link-3(href='#')
+							| 
+							span Category
+						a.icon.tooltip-1.link-4(href='#')
+							| 
+							span Quick info
+						a.icon.tooltip-1.link-5(href='#')
+							| 
+							span Get a quote
+				// Lighbox popup
+				#image-2.lightbox
+					// Lightbox image
+					.image-wrap
+						a.close-overlay(href='#close')
+						img(src='img/big/2.jpg', alt='image alt')
+					// Lightbox content
+					.lightbox-caption
+						// Category icon
+						.category-2
+							span.icon 
+						// Lightbox image description
+						span.title Project title
+						.divider-2
+						p
+							| Additional caption for quick project description. Lacus augue. Nec sit! Habitasse? Dapibus lorem nascetur penatibus mattis! Ultricies! Et porttitor dolor ultricies ac nisi a. Facilisis tristique. Elementum cum scelerisque. In, in risus magna placerat elementum penatibus montes odio duis dapibus a!
+						#list
+							.list-1 Lorem ipsum
+							.list-2 Duis dapibus
+							.list-3 Penatibus montes
+							.list-4 In risus magna
+							.list-5 Lacus augue
+						.read-more
+							a.more(href='#')
+								| Project overview 
+								span.icon 
+						// Share icons
+						.share-icons
+							a.fb-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Share it
+							a.tw-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Tweet it
+							a.gp-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Give +1
+							a.li-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Post it
+						// Lightbox navigation
+						.lightbox-navigation
+							a.previous.icon(href='#image-1') 
+							a.next.icon(href='#image-3') 
+							a.close.icon(href='#close') 
+			// / Image 2
+			// Image 3
+			li.category-2.category-3
+				// Small image
+				img.fade-in.three(src='img/big/3.jpg', alt='image alt')
+				// Image overlay content
+				.overlay
+					// Category icon
+					.category
+						span.icon 
+					// Image overlay description
+					h3 Some awesome project
+					p
+						| A quick caption for the project, which can contain short description with additional stylings to match your design.
+					.divider
+					// Image link icons
+					.image-links
+						a.icon.tooltip-1.link-1(href='#image-3')
+							| 
+							span Listen
+						a.icon.tooltip-1.link-2(href='#')
+							| 
+							span Open project
+						a.icon.tooltip-1.link-3(href='#')
+							| 
+							span Category
+						a.icon.tooltip-1.link-4(href='#')
+							| 
+							span Quick info
+						a.icon.tooltip-1.link-5(href='#')
+							| 
+							span Get a quote
+				// Lighbox popup
+				#image-3.lightbox
+					// Lightbox image
+					.image-wrap
+						a.close-overlay(href='#close')
+						img(src='img/big/3.jpg', alt='image alt')
+					// Lightbox content
+					.lightbox-caption
+						// Category icon
+						.category-2
+							span.icon 
+						// Lightbox image description
+						span.title Project title
+						.divider-2
+						p
+							| Additional caption for quick project description. Lacus augue. Nec sit! Habitasse? Dapibus lorem nascetur penatibus mattis! Ultricies! Et porttitor dolor ultricies ac nisi a. Facilisis tristique. Elementum cum scelerisque. In, in risus magna placerat elementum penatibus montes odio duis dapibus a!
+						#list
+							.list-1 Lorem ipsum
+							.list-2 Duis dapibus
+							.list-3 Penatibus montes
+							.list-4 In risus magna
+							.list-5 Lacus augue
+						.read-more
+							a.more(href='#')
+								| Project overview 
+								span.icon 
+						// Share icons
+						.share-icons
+							a.fb-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Share it
+							a.tw-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Tweet it
+							a.gp-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Give +1
+							a.li-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Post it
+						// Lightbox navigation
+						.lightbox-navigation
+							a.previous.icon(href='#image-2') 
+							a.next.icon(href='#image-4') 
+							a.close.icon(href='#close') 
+			// / Image 3
+			// Image 4
+			li.category-1.category-2
+				// Small image
+				img.fade-in.four(src='img/big/4.jpg', alt='image alt')
+				// Image overlay content
+				.overlay
+					// Category icon
+					.category
+						span.icon 
+					// Image overlay description
+					h3 Some awesome project
+					p
+						| A quick caption for the project, which can contain short description with additional stylings to match your design.
+					.divider
+					// Image link icons
+					.image-links
+						a.icon.tooltip-1.link-1(href='#image-4')
+							| 
+							span Play video
+						a.icon.tooltip-1.link-2(href='#')
+							| 
+							span Open project
+						a.icon.tooltip-1.link-3(href='#')
+							| 
+							span Category
+						a.icon.tooltip-1.link-4(href='http://vimeo.com/18669276', target='_blank')
+							| 
+							span
+								b Video by:
+								|  Sebastianbap
+						a.icon.tooltip-1.link-5(href='#')
+							| 
+							span Get a quote
+				// Lighbox popup
+				#image-4.lightbox
+					// Lightbox image
+					.image-wrap
+						// Example video
+						iframe(src='http://player.vimeo.com/video/18669276?title=0&byline=0&portrait=0', width='500', height='281', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+					// Lightbox content
+					.lightbox-caption
+						// Category icon
+						.category-2
+							span.icon 
+						// Lightbox image description
+						span.title Project title
+						.divider-2
+						p
+							| Additional caption for quick project description. Lacus augue. Nec sit! Habitasse? Dapibus lorem nascetur penatibus mattis! Ultricies! Et porttitor dolor ultricies ac nisi a. Facilisis tristique. Elementum cum scelerisque. In, in risus magna placerat elementum penatibus montes odio duis dapibus a!
+						#list
+							.list-1 Lorem ipsum
+							.list-2 Duis dapibus
+							.list-3 Penatibus montes
+							.list-4 In risus magna
+							.list-5 Lacus augue
+						.read-more
+							a.more(href='#')
+								| Project overview 
+								span.icon 
+						// Share icons
+						.share-icons
+							a.fb-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Share it
+							a.tw-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Tweet it
+							a.gp-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Give +1
+							a.li-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Post it
+						// Lightbox navigation
+						.lightbox-navigation
+							a.previous.icon(href='#image-3') 
+							a.next.icon(href='#image-5') 
+							a.close.icon(href='#close') 
+			// / Image 4
+			// Image 5
+			li.category-1
+				// Small image
+				img.fade-in.five(src='img/big/5.jpg', alt='image alt')
+				// Image overlay content
+				.overlay
+					// Category icon
+					.category
+						span.icon 
+					// Image overlay description
+					h3 Some awesome project
+					p
+						| A quick caption for the project, which can contain short description with additional stylings to match your design.
+					.divider
+					// Image link icons
+					.image-links
+						a.icon.tooltip-1.link-1(href='#image-5')
+							| 
+							span Read more
+						a.icon.tooltip-1.link-2(href='#')
+							| 
+							span Open project
+						a.icon.tooltip-1.link-3(href='#')
+							| 
+							span Category
+						a.icon.tooltip-1.link-4(href='#')
+							| 
+							span Quick info
+						a.icon.tooltip-1.link-5(href='#')
+							| 
+							span Get a quote
+				// Lighbox popup
+				#image-5.lightbox
+					// Lightbox image
+					.image-wrap
+						a.close-overlay(href='#close')
+						img(src='img/big/5.jpg', alt='image alt')
+					// Lightbox content
+					.lightbox-caption
+						// Category icon
+						.category-2
+							span.icon 
+						// Lightbox image description
+						span.title Project title
+						.divider-2
+						p
+							| Additional caption for quick project description. Lacus augue. Nec sit! Habitasse? Dapibus lorem nascetur penatibus mattis! Ultricies! Et porttitor dolor ultricies ac nisi a. Facilisis tristique. Elementum cum scelerisque. In, in risus magna placerat elementum penatibus montes odio duis dapibus a!
+						#list
+							.list-1 Lorem ipsum
+							.list-2 Duis dapibus
+							.list-3 Penatibus montes
+							.list-4 In risus magna
+							.list-5 Lacus augue
+						.read-more
+							a.more(href='#')
+								| Project overview 
+								span.icon 
+						// Share icons
+						.share-icons
+							a.fb-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Share it
+							a.tw-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Tweet it
+							a.gp-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Give +1
+							a.li-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Post it
+						// Lightbox navigation
+						.lightbox-navigation
+							a.previous.icon(href='#image-4') 
+							a.next.icon(href='#image-6') 
+							a.close.icon(href='#close') 
+			// / Image 5
+			// Image 6
+			li.category-3.category-4
+				// Small image
+				img.fade-in.six(src='img/big/6.jpg', alt='image alt')
+				// Image overlay content
+				.overlay
+					// Category icon
+					.category
+						span.icon 
+					// Image overlay description
+					h3 Some awesome project
+					p
+						| A quick caption for the project, which can contain short description with additional stylings to match your design.
+					.divider
+					// Image link icons
+					.image-links
+						a.icon.tooltip-1.link-1(href='#image-6')
+							| 
+							span Meet us
+						a.icon.tooltip-1.link-2(href='#')
+							| 
+							span Open project
+						a.icon.tooltip-1.link-3(href='#')
+							| 
+							span Category
+						a.icon.tooltip-1.link-4(href='#')
+							| 
+							span Quick info
+						a.icon.tooltip-1.link-5(href='#')
+							| 
+							span Get a quote
+				// Lighbox popup
+				#image-6.lightbox
+					// Lightbox image
+					.image-wrap
+						a.close-overlay(href='#close')
+						img(src='img/big/6.jpg', alt='image alt')
+					// Lightbox content
+					.lightbox-caption
+						// Category icon
+						.category-2
+							span.icon 
+						// Lightbox image description
+						span.title Project title
+						.divider-2
+						p
+							| Additional caption for quick description. Lacus augue. Nec sit! Habitasse? Dapibus lorem nascetur penatibus mattis! Ultricies! Et porttitor dolor ultricies ac nisi a. Facilisis tristique. Elementum cum scelerisque. In, in risus magna placerat elementum penatibus montes odio duis dapibus a!
+						#list
+							.list-1 Lorem ipsum
+							.list-2 Duis dapibus
+							.list-3 Penatibus montes
+							.list-4 In risus magna
+							.list-5 Lacus augue
+						.read-more
+							a.more(href='#')
+								| Meet the team 
+								span.icon 
+						// Share icons
+						.share-icons
+							a.fb-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Share it
+							a.tw-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Tweet it
+							a.gp-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Give +1
+							a.li-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Post it
+						// Lightbox navigation
+						.lightbox-navigation
+							a.previous.icon(href='#image-5') 
+							a.next.icon(href='#image-7') 
+							a.close.icon(href='#close') 
+			// / Image 6
+			// Image 7
+			li.category-2
+				// Small image
+				img.fade-in.seven(src='img/big/7.jpg', alt='image alt')
+				// Image overlay content
+				.overlay
+					// Category icon
+					.category
+						span.icon 
+					// Image overlay description
+					h3 Some awesome project
+					p A quick caption for the project, which can contain short description.
+					.divider
+					// Image link icons
+					.image-links
+						a.icon.tooltip-1.link-1(href='#image-7')
+							| 
+							span More info
+						a.icon.tooltip-1.link-2(href='#')
+							| 
+							span Open project
+						a.icon.tooltip-1.link-3(href='#')
+							| 
+							span Category
+						a.icon.tooltip-1.link-4(href='#')
+							| 
+							span Quick info
+						a.icon.tooltip-1.link-5(href='#')
+							| 
+							span Get a quote
+				// Lighbox popup
+				#image-7.lightbox
+					// Lightbox image
+					.image-wrap
+						a.close-overlay(href='#close')
+						img(src='img/big/7.jpg', alt='image alt')
+					// Lightbox content
+					.lightbox-caption
+						// Category icon
+						.category-2
+							span.icon 
+						// Lightbox image description
+						span.title Project title
+						.divider-2
+						p
+							| Additional caption for quick project description. Lacus augue. Nec sit! Habitasse? Dapibus lorem nascetur penatibus mattis! Ultricies! Et porttitor dolor ultricies ac nisi a. Facilisis tristique. Elementum cum scelerisque. In, in risus magna placerat elementum penatibus montes odio duis dapibus a!
+						#list
+							.list-1 Lorem ipsum
+							.list-2 Duis dapibus
+							.list-3 Penatibus montes
+							.list-4 In risus magna
+							.list-5 Lacus augue
+						.read-more
+							a.more(href='#')
+								| Project overview 
+								span.icon 
+						// Share icons
+						.share-icons
+							a.fb-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Share it
+							a.tw-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Tweet it
+							a.gp-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Give +1
+							a.li-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Post it
+						// Lightbox navigation
+						.lightbox-navigation
+							a.previous.icon(href='#image-6') 
+							a.next.icon(href='#image-8') 
+							a.close.icon(href='#close') 
+			// / Image 7
+			// Image 8
+			li.category-1
+				// Small image
+				img.fade-in.eight(src='img/big/8.jpg', alt='image alt')
+				// Image overlay content
+				.overlay
+					// Category icon
+					.category
+						span.icon 
+					// Image overlay description
+					h3 Some awesome project
+					p A quick caption for the project, which can contain short description.
+					.divider
+					// Image link icons
+					.image-links
+						a.icon.tooltip-1.link-1(href='#image-8')
+							| 
+							span More info
+						a.icon.tooltip-1.link-2(href='#')
+							| 
+							span Open project
+						a.icon.tooltip-1.link-3(href='#')
+							| 
+							span Category
+						a.icon.tooltip-1.link-4(href='#')
+							| 
+							span Quick info
+						a.icon.tooltip-1.link-5(href='#')
+							| 
+							span Get a quote
+				// Lighbox popup
+				#image-8.lightbox
+					// Lightbox image
+					.image-wrap
+						a.close-overlay(href='#close')
+						img(src='img/big/8.jpg', alt='image alt')
+					// Lightbox content
+					.lightbox-caption
+						// Category icon
+						.category-2
+							span.icon 
+						// Lightbox image description
+						span.title Project title
+						.divider-2
+						p
+							| Additional caption for quick project description. Lacus augue. Nec sit! Habitasse? Dapibus lorem nascetur penatibus mattis! Ultricies! Et porttitor dolor ultricies ac nisi a. Facilisis tristique. Elementum cum scelerisque. In, in risus magna placerat elementum penatibus montes odio duis dapibus a!
+						#list
+							.list-1 Lorem ipsum
+							.list-2 Duis dapibus
+							.list-3 Penatibus montes
+							.list-4 In risus magna
+							.list-5 Lacus augue
+						.read-more
+							a.more(href='#')
+								| Project overview 
+								span.icon 
+						// Share icons
+						.share-icons
+							a.fb-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Share it
+							a.tw-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Tweet it
+							a.gp-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Give +1
+							a.li-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Post it
+						// Lightbox navigation
+						.lightbox-navigation
+							a.previous.icon(href='#image-7') 
+							a.next.icon(href='#image-9') 
+							a.close.icon(href='#close') 
+			// / Image 8
+			// Image 9
+			li.category-3.category-2
+				// Small image
+				img.fade-in.nine(src='img/big/9.jpg', alt='image alt')
+				// Image overlay content
+				.overlay
+					// Category icon
+					.category
+						span.icon 
+					// Image overlay description
+					h3 Some awesome project
+					p A quick caption for the project, which can contain short description.
+					.divider
+					// Image link icons
+					.image-links
+						a.icon.tooltip-1.link-1(href='#image-9')
+							| 
+							span More info
+						a.icon.tooltip-1.link-2(href='#')
+							| 
+							span Open project
+						a.icon.tooltip-1.link-3(href='#')
+							| 
+							span Category
+						a.icon.tooltip-1.link-4(href='#')
+							| 
+							span Quick info
+						a.icon.tooltip-1.link-5(href='#')
+							| 
+							span Get a quote
+				// Lighbox popup
+				#image-9.lightbox
+					// Lightbox image
+					.image-wrap
+						a.close-overlay(href='#close')
+						img(src='img/big/9.jpg', alt='image alt')
+					// Lightbox content
+					.lightbox-caption
+						// Category icon
+						.category-2
+							span.icon 
+						// Lightbox image description
+						span.title Project title
+						.divider-2
+						p
+							| Additional caption for quick project description. Lacus augue. Nec sit! Habitasse? Dapibus lorem nascetur penatibus mattis! Ultricies! Et porttitor dolor ultricies ac nisi a. Facilisis tristique. Elementum cum scelerisque. In, in risus magna placerat elementum penatibus montes odio duis dapibus a!
+						#list
+							.list-1 Lorem ipsum
+							.list-2 Duis dapibus
+							.list-3 Penatibus montes
+							.list-4 In risus magna
+							.list-5 Lacus augue
+						.read-more
+							a.more(href='#')
+								| Project overview 
+								span.icon 
+						// Share icons
+						.share-icons
+							a.fb-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Share it
+							a.tw-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Tweet it
+							a.gp-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Give +1
+							a.li-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Post it
+						// Lightbox navigation
+						.lightbox-navigation
+							a.previous.icon(href='#image-8') 
+							a.next.icon(href='#image-10') 
+							a.close.icon(href='#close') 
+			// / Image 9
+			// Image 10
+			li.category-1
+				// Small image
+				img.fade-in.ten(src='img/big/10.jpg', alt='image alt')
+				// Image overlay content
+				.overlay
+					// Category icon
+					.category
+						span.icon 
+					// Image overlay description
+					h3 Some awesome project
+					p A quick caption for the project, which can contain short description.
+					.divider
+					// Image link icons
+					.image-links
+						a.icon.tooltip-1.link-1(href='#image-10')
+							| 
+							span More info
+						a.icon.tooltip-1.link-2(href='#')
+							| 
+							span Open project
+						a.icon.tooltip-1.link-3(href='#')
+							| 
+							span Category
+						a.icon.tooltip-1.link-4(href='#')
+							| 
+							span Quick info
+						a.icon.tooltip-1.link-5(href='#')
+							| 
+							span Get a quote
+				// Lighbox popup
+				#image-10.lightbox
+					// Lightbox image
+					.image-wrap
+						a.close-overlay(href='#close')
+						img(src='img/big/10.jpg', alt='image alt')
+					// Lightbox content
+					.lightbox-caption
+						// Category icon
+						.category-2
+							span.icon 
+						// Lightbox image description
+						span.title Project title
+						.divider-2
+						p
+							| Additional caption for quick project description. Lacus augue. Nec sit! Habitasse? Dapibus lorem nascetur penatibus mattis! Ultricies! Et porttitor dolor ultricies ac nisi a. Facilisis tristique. Elementum cum scelerisque. In, in risus magna placerat elementum penatibus montes odio duis dapibus a!
+						#list
+							.list-1 Lorem ipsum
+							.list-2 Duis dapibus
+							.list-3 Penatibus montes
+							.list-4 In risus magna
+							.list-5 Lacus augue
+						.read-more
+							a.more(href='#')
+								| Project overview 
+								span.icon 
+						// Share icons
+						.share-icons
+							a.fb-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Share it
+							a.tw-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Tweet it
+							a.gp-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Give +1
+							a.li-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Post it
+						// Lightbox navigation
+						.lightbox-navigation
+							a.previous.icon(href='#image-9') 
+							a.next.icon(href='#image-11') 
+							a.close.icon(href='#close') 
+			// / Image 10
+			// Image 11
+			li.category-3
+				// Small image
+				img.fade-in.eleven(src='img/big/11.jpg', alt='image alt')
+				// Image overlay content
+				.overlay
+					// Category icon
+					.category
+						span.icon 
+					// Image overlay description
+					h3 Some awesome project
+					p A quick caption for the project, which can contain short description.
+					.divider
+					// Image link icons
+					.image-links
+						a.icon.tooltip-1.link-1(href='#image-11')
+							| 
+							span More info
+						a.icon.tooltip-1.link-2(href='#')
+							| 
+							span Open project
+						a.icon.tooltip-1.link-3(href='#')
+							| 
+							span Category
+						a.icon.tooltip-1.link-4(href='#')
+							| 
+							span Quick info
+						a.icon.tooltip-1.link-5(href='#')
+							| 
+							span Get a quote
+				// Lighbox popup
+				#image-11.lightbox
+					// Lightbox image
+					.image-wrap
+						a.close-overlay(href='#close')
+						img(src='img/big/11.jpg', alt='image alt')
+					// Lightbox content
+					.lightbox-caption
+						// Category icon
+						.category-2
+							span.icon 
+						// Lightbox image description
+						span.title Project title
+						.divider-2
+						p
+							| Additional caption for quick project description. Lacus augue. Nec sit! Habitasse? Dapibus lorem nascetur penatibus mattis! Ultricies! Et porttitor dolor ultricies ac nisi a. Facilisis tristique. Elementum cum scelerisque. In, in risus magna placerat elementum penatibus montes odio duis dapibus a!
+						#list
+							.list-1 Lorem ipsum
+							.list-2 Duis dapibus
+							.list-3 Penatibus montes
+							.list-4 In risus magna
+							.list-5 Lacus augue
+						.read-more
+							a.more(href='#')
+								| Project overview 
+								span.icon 
+						// Share icons
+						.share-icons
+							a.fb-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Share it
+							a.tw-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Tweet it
+							a.gp-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Give +1
+							a.li-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Post it
+						// Lightbox navigation
+						.lightbox-navigation
+							a.previous.icon(href='#image-10') 
+							a.next.icon(href='#image-12') 
+							a.close.icon(href='#close') 
+			// / Image 11
+			// Image 12
+			li.category-3
+				// Small image
+				img.fade-in.twelve(src='img/big/12.jpg', alt='image alt')
+				// Image overlay content
+				.overlay
+					// Category icon
+					.category
+						span.icon 
+					// Image overlay description
+					h3 Some awesome project
+					p A quick caption for the project, which can contain short description.
+					.divider
+					// Image link icons
+					.image-links
+						a.icon.tooltip-1.link-1(href='#image-12')
+							| 
+							span More info
+						a.icon.tooltip-1.link-2(href='#')
+							| 
+							span Open project
+						a.icon.tooltip-1.link-3(href='#')
+							| 
+							span Category
+						a.icon.tooltip-1.link-4(href='#')
+							| 
+							span Quick info
+						a.icon.tooltip-1.link-5(href='#')
+							| 
+							span Get a quote
+				// Lighbox popup
+				#image-12.lightbox
+					// Lightbox image
+					.image-wrap
+						a.close-overlay(href='#close')
+						img(src='img/big/10.jpg', alt='image alt')
+					// Lightbox content
+					.lightbox-caption
+						// Category icon
+						.category-2
+							span.icon 
+						// Lightbox image description
+						span.title Project title
+						.divider-2
+						p
+							| Additional caption for quick project description. Lacus augue. Nec sit! Habitasse? Dapibus lorem nascetur penatibus mattis! Ultricies! Et porttitor dolor ultricies ac nisi a. Facilisis tristique. Elementum cum scelerisque. In, in risus magna placerat elementum penatibus montes odio duis dapibus a!
+						#list
+							.list-1 Lorem ipsum
+							.list-2 Duis dapibus
+							.list-3 Penatibus montes
+							.list-4 In risus magna
+							.list-5 Lacus augue
+						.read-more
+							a.more(href='#')
+								| Project overview 
+								span.icon 
+						// Share icons
+						.share-icons
+							a.fb-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Share it
+							a.tw-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Tweet it
+							a.gp-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Give +1
+							a.li-share.icon.tooltip-1(target='_blank', href='#close')
+								| 
+								span Post it
+						// Lightbox navigation
+						.lightbox-navigation
+							a.previous.icon(href='#image-11') 
+							a.next.icon(href='#image-1') 
+							a.close.icon(href='#close') 
+			// / Image 12
+		// Pagination
+		.pagination
+			span.active 1
+			a.page(href='#') 2
+			a.page(href='#') 3
+			a.page(href='#') 4
+			a.page(href='#') 5
+			.page-info Page 1 of 5
+		// / Pagination
+// / Gallery - END copying here

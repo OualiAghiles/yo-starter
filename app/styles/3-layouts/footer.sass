@@ -1,0 +1,77 @@
+#footer
+  z-index: -333
+  border-top: 10px solid #fff
+  position: fixed
+  width: 100%
+  bottom: 0
+  height: 86vh
+
+  .contact-top
+    position: relative
+  .container-fluid
+    padding: 0
+  .nsc-form
+    width: 370px
+    padding: 20px
+    position: absolute
+    bottom: 30px
+    left: 10%
+    z-index: 10
+    .panel
+      border-radius: 4px
+      background-color: rgb(249, 249, 249)
+      width: 368px
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5)
+    form
+      height: 100%
+  .titre-section
+    padding-bottom: 0
+  .nsc-conatct-info
+    padding-top: 50px
+    padding-bottom: 50px
+    .col-xs-4.col-sm-4.col-md-4.text-center
+      position: relative
+      text-align: center
+      &:hover
+        .info-cont
+          display: inline-block
+      .item-contact
+        width: 150px
+        &::after
+        width: 75px
+        height: 75px
+        display: inline-block
+        border: 3px solid #fff
+        border-radius: 3px
+        border-bottom: 0
+        position: absolute
+        left: 0
+        bottom: 10px
+  .nsc-logow
+    margin-bottom: 0
+    width: 206px
+    height: 55px
+    margin: auto
+    background: url(../img/nsc_logow.png)
+    background-size: cover
+  .gmaps
+    filter: grayscale(100%)
+  .copyr
+    padding: 10px
+.nsc_submit_lg
+  width: 100%
+  margin: 10px
+  margin: auto
+  background: $nsc_red
+.info-cont
+  width: 80%
+  display: none
+  position: absolute
+  z-index: 32
+  bottom: -50px
+  right: 10%
+  background: rgba(255, 255, 255, 0.9)
+  box-shadow: 3px 2px 2px rgba(0,0,0,0.4)
+  color: $nsc_red
+  padding: 10px
+  border-radius: 3px

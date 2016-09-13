@@ -1,0 +1,9 @@
+// Modal
+mixin modal(nscModal)
+  each itemModal in nscModal
+    -var modalInfo = {'id': itemModal.modalId}
+      .nsc_modal.container()&attributes(modalInfo)
+        #btn-close-modal.close-animatedModal.fa.fa-times-circle-o.fa-2x
+        .modal-content
+          #designe_modal
+              include modals/creagraph 

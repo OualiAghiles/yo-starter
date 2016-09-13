@@ -1,0 +1,187 @@
+#portfolio
+  padding-bottom: 50px
+.titre-section
+  padding-top: 50px
+  padding-bottom: 50px
+  .container-fluid
+    padding: 0
+ul.thumbs
+  padding: 0
+  margin: 0
+  overflow: hidden
+
+
+  >li
+    display: inline-block
+    height: 200px
+    width: auto
+    overflow: hidden
+    padding: 0
+    float: left
+    position: relative
+    padding: 5px
+    transition: all 300ms ease-in-out
+    &.content-thumbs
+      transform: translateX(150px)
+      opacity: 0
+
+    &.is-showing
+      opacity: 1
+      transform: translateX(0px)
+
+    a.thumbnail
+      background-repeat: no-repeat
+      background-size: cover
+      background-color: $nsc_red
+      background-position-x: 50%
+      display: block
+      box-sizing: border-box
+      transition: all 500ms ease-in-out
+      -webkit-transition: all 500ms ease-in-out
+      -moz-transition: all 500ms ease-in-out
+      z-index: 9
+      width: 100%
+      height: 100%
+      overflow: hidden
+
+
+      h4
+        position: absolute
+        top: 5px
+        left: 5px
+        padding: 7px 9px
+        text-transform: uppercase
+        background-color: rgba(209, 10, 44, 0.8)
+        color: #fff
+        font-size: 14px
+        margin: 0
+        width: auto
+        border-radius: 3px 0 0 0
+
+      .description
+        padding: 5px
+        position: absolute
+        height: calc(100% - 10px)
+        bottom: 5px
+        left: 5px
+        width: 0
+        box-sizing: inherit
+        opacity: 0
+        transition: all 0.5s ease
+        -webkit-transition: all 0.5s ease
+        -moz-transition: all 0.5s ease
+        color: #fff
+        background-color: rgba(209, 10, 44, 0.5)
+        font-size: 18px
+        padding: 18px 12px
+        line-height: 10px
+        box-sizing: inherit
+        text-align: center
+        border-radius: 3px
+
+      .active-arrow
+        width: 0
+        height: 0
+        border-left: 25px solid transparent
+        border-right: 25px solid transparent
+        border-bottom: 25px solid $nsc_dark
+        bottom: -2px
+        z-index: 99
+        position: absolute
+        left: 0
+        right: 0
+        margin: 0 auto
+
+      &:hover .description
+        width: calc(100% - 10px)
+        opacity: 1
+        background: $nsc_red 0.8
+
+    &.content
+      width: 100% !important
+      display: none
+      margin-bottom: 40px
+      background: none
+      float: left
+      height: auto
+      position: relative
+      padding: 45px 0 45px
+
+      h3
+        display: inline-block
+
+      .close
+        position: absolute
+        top: 0
+        right: 0
+        color: #fff
+        cursor: pointer
+        font-weight: normal
+        font-family: -webkit-pictograph
+        font-size: 76px
+        line-height: 70px
+
+        &:hover
+          opacity: 0.7
+
+      .media
+        display: inline-block
+        float: left
+        height: 100%
+
+        img
+          max-width: 100%
+
+@media (max-width: 970px)
+  ul.thumbs li
+    width: 50% !important
+
+  .media iframe
+    width: 100%
+
+@media (max-width: 1200px) and (min-width: 970px)
+  ul.thumbs li
+    width: 33.3333% !important
+
+@media (max-width: 1080px)
+  .close
+    right: 0 !important
+    top: 7px !important
+
+  ul.thumbs .media
+    margin-right: 0
+    margin-bottom: 20px
+
+@media (max-width: 590px)
+  ul.thumbs
+    li
+      width: 100% !important
+
+    .media
+      display: none !important
+
+@media (max-width: 700px) and (min-width: 590px)
+  ul.thumbs .media
+    width: 100% !important
+    display: block !important
+    margin-top: 60px
+
+.portfolio-content
+  display: none
+
+
+  .nsc-titre
+    margin-bottom: 50px
+
+ul.thumbs
+  li.content.nsc-folio
+    height: auto
+    background: $nsc_dark
+
+    .close
+      color: #fff !important
+
+.nsc-folio
+  h1, p
+    color: white
+    font-family: "Raleway"
