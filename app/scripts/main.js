@@ -2,7 +2,7 @@ $(document).ready(function() {
   $(window).scroll(function(){
     var wScroll = $(this).scrollTop();
      $('.accroche').css({
-          'transform':'translate(0px,'+ wScroll / 10 +'%)'
+          'transform':'translate(0px,'+ wScroll / 12 +'%)'
       });
     });
 
