@@ -4,9 +4,11 @@ $(document).ready(function() {
      $('.accroche').css({
           'transform':'translate(0px,'+ wScroll / 12 +'%)'
       });
-    });
-
-
+      var secTop= $('#service').offset().top);
+    if (wScroll > secTop){
+      $("nav").addClass("is-changed");
+  }
+    }});
 
     $('nav a[href*=\\#]').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
